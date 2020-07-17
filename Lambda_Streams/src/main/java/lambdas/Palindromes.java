@@ -7,8 +7,7 @@ import java.util.function.Predicate;
 public class Palindromes {
 	public static void main(String[] args) {
         List<String> a = Arrays.asList("abba","aba","abba","pqrs","abcddcba","azdx","abcfed");
-        List<String> palindromes = Palindromes.findPal(a, 
-                (str) -> Palindromes.isPal((String) str));
+        List<String> palindromes = Palindromes.findPal(a, (str) -> Palindromes.isPal((String) str));
  
         System.out.println("Palindromes are " + palindromes);
     }
