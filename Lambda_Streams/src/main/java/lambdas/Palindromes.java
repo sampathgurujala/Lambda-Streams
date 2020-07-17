@@ -26,10 +26,7 @@ public class Palindromes {
         } 
     public static List<String> findPal(List<String> list, Predicate<String> predicate) { 
     	List<String> sortedpal = new ArrayList<String>(); 
-    	list
-    	.stream()
-    	.filter((i) -> (predicate.test((String) i))).forEach((i) -> {
-            sortedpal.add((String) i);
+    	list.stream().filter((i) -> (predicate.test((String) i))).forEach((i) -> {sortedpal.add((String) i);
         });
         return sortedpal;
  
